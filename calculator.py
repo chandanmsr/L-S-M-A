@@ -11,11 +11,15 @@ def multiply(x, y):
 def divide(x, y):
     return x / y
 
+def power(x,y):
+    return x**y
+
 print("Select operation.")
 print("1.Add")
 print("2.Subtract")
 print("3.Multiply")
 print("4.Divide")
+print("5.Power")
 
 while True:
     choice = input("Enter choice(1/2/3/4): ")
@@ -35,6 +39,9 @@ while True:
 
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
+
+        elif choice == '5':
+            print("(", num1,") ^", num2, "=", power(x,y))
         break
     else:
         print("Invalid Input")
